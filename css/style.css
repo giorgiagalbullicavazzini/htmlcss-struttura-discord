@@ -68,6 +68,27 @@ Debug
   height: 910px;
 }
 
+.debug footer {
+  background-color: #23272A;
+}
+
+.debug .footer-top > * {
+  height: 500px;
+  border: 2px dashed;
+}
+
+.debug .footer-box {
+  background-color: #F08080;
+}
+
+.debug .footer-big {
+  background-color: #20B2AA;
+}
+
+.debug .footer-small {
+  border: 2px dashed white;
+}
+
 /*
 ===========
 Header top
@@ -87,7 +108,7 @@ Header top
 
 header .logo,
 header .login {
-  width: 13%;
+  width: 12%;
 }
 
 header .login {
@@ -95,7 +116,7 @@ header .login {
 }
 
 header .link {
-  width: 38%;
+  width: 40%;
   text-align: center;
 }
 
@@ -140,7 +161,7 @@ main section:not(:last-child) {
 }
 
 section .big-box {
-  width: 38%;
+  width: 35%;
 }
 
 section .small-box {
@@ -148,6 +169,31 @@ section .small-box {
 }
 
 section .bigger-box {
-  width: 63%;
+  width: 60%;
   margin: auto;
+}
+
+/*
+===========
+Footer
+===========
+*/
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 40px;
+}
+
+.footer-box {
+  width: 20%;
+}
+
+.footer-big {
+  width: 40%;
+  display: flex;
+}
+
+.footer-small {
+  width: 25%;
 }
