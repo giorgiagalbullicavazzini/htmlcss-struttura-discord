@@ -63,6 +63,11 @@ Debug
   background-color: #FFC0CB;
 }
 
+.debug .bigger-box {
+  background-color: #228B22;
+  height: 910px;
+}
+
 /*
 ===========
 Header top
@@ -126,9 +131,12 @@ Main
 */
 
 main section {
+  padding: 50px;
+}
+
+main section:not(:last-child) {
   display: flex;
   justify-content: center;
-  padding: 50px;
 }
 
 section .big-box {
@@ -137,4 +145,9 @@ section .big-box {
 
 section .small-box {
   width: 25%;
+}
+
+section .bigger-box {
+  width: 63%;
+  margin: auto;
 }
