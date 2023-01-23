@@ -20,17 +20,22 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  width: 60%;
+  margin: auto;
+}
+
 /*
 ===========
 Debug
 ===========
 */
 
-.debug header {
+.debug .header-top {
   background-color: #ADD8E6;
 }
 
-.debug .header-top > * {
+.debug .header-top .container > * {
   background-color: #DAA520;
   border: 2px dashed;
 }
@@ -50,7 +55,7 @@ Debug
   background-color: #D3D3D3;
 }
 
-.debug section > * {
+.debug section .container > * {
   border: 2px dashed;
   height: 480px;
 }
@@ -76,7 +81,7 @@ Debug
   border-bottom: 2px solid white;
 }
 
-.debug .footer-top > * {
+.debug .footer-top .container > * {
   height: 500px;
   border: 2px dashed;
 }
@@ -110,20 +115,20 @@ Header top
 ===========
 */
 
-.header-top {
+.header-top .container {
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 15px 0;
   font-size: 20px;
 }
 
-.header-top > * {
+.header-top .container > * {
   padding: 10px;
 }
 
 header .logo,
 header .login {
-  width: 12%;
+  width: 20%;
 }
 
 header .login {
@@ -131,7 +136,7 @@ header .login {
 }
 
 header .link {
-  width: 40%;
+  width: 60%;
   text-align: center;
 }
 
@@ -152,11 +157,11 @@ Header bottom
 */
 
 .header-bottom {
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .header-box {
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 
@@ -167,54 +172,60 @@ Main
 */
 
 main section {
-  padding: 50px;
+  padding: 50px 0;
 }
 
-main section:not(:last-child) {
+main section .container {
   display: flex;
   justify-content: center;
 }
 
 section .big-box {
-  width: 35%;
+  width: 60%;
 }
 
 section .small-box {
-  width: 25%;
+  width: 40%;
 }
 
 section .bigger-box {
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 
 /*
 ===========
-Footer
+Footer top
 ===========
 */
 
-.footer-top {
+.footer-top .container {
   display: flex;
   justify-content: center;
   padding: 10px 0 40px;
 }
 
 .footer-box {
-  width: 20%;
+  width: 30%;
 }
 
 .footer-big {
-  width: 40%;
   display: flex;
+  width: calc(100% - 30%);
 }
 
 .footer-small {
   width: 25%;
 }
 
+/*
+===========
+Footer bottom
+===========
+*/
+
 .footer-bigger {
-  width: 60%;
+  width: 100%;
   margin: 30px auto 0;
   display: flex;
   justify-content: space-between;
