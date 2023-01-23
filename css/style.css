@@ -72,6 +72,10 @@ Debug
   background-color: #23272A;
 }
 
+.debug .footer-top {
+  border-bottom: 2px solid white;
+}
+
 .debug .footer-top > * {
   height: 500px;
   border: 2px dashed;
@@ -87,6 +91,17 @@ Debug
 
 .debug .footer-small {
   border: 2px dashed white;
+}
+
+.debug .footer-bigger {
+  background-color: #7FFFD4;
+  height: 80px;
+}
+
+.debug .footer-bigger .logo,
+.debug .footer-bigger .button {
+  background-color: #FFB6C1;
+  border: 2px dashed;
 }
 
 /*
@@ -196,4 +211,18 @@ Footer
 
 .footer-small {
   width: 25%;
+}
+
+.footer-bigger {
+  width: 60%;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bigger .logo,
+.footer-bigger .button {
+  padding: 5px 10px;
+  font-size: 20px;
 }
