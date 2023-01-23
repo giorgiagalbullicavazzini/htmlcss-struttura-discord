@@ -51,11 +51,11 @@ Debug
   height: 400px;
 }
 
-.debug section:nth-child(even) {
+.debug .section:nth-child(even) {
   background-color: #D3D3D3;
 }
 
-.debug section .container > * {
+.debug .section .container .box {
   border: 2px dashed;
   height: 480px;
 }
@@ -70,6 +70,7 @@ Debug
 
 .debug .bigger-box {
   background-color: #228B22;
+  border: 2px dashed;
   height: 910px;
 }
 
@@ -171,24 +172,24 @@ Main
 ===========
 */
 
-main section {
+main .section {
   padding: 50px 0;
 }
 
-main section .container {
+main .section .container {
   display: flex;
   justify-content: center;
 }
 
-section .big-box {
+.section .big-box {
   width: 60%;
 }
 
-section .small-box {
+.section .small-box {
   width: 40%;
 }
 
-section .bigger-box {
+.section .bigger-box {
   width: 100%;
   margin: auto;
 }
