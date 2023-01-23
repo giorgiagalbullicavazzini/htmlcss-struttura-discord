@@ -1,0 +1,56 @@
+/*
+===========
+Reset
+===========
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+===========
+Debug
+===========
+*/
+
+.debug header {
+  background-color: #ADD8E6;
+}
+
+.debug .header-top * {
+  background-color: #DAA520;
+  border: 1px dashed;
+}
+
+/*
+===========
+Header
+===========
+*/
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header-top * {
+  padding: 5px;
+}
+
+.logo,
+.login {
+  width: 10%;
+}
+
+.login {
+  text-align: right;
+}
+
+.link {
+  width: 45%;
+  text-align: center;
+}
