@@ -46,6 +46,23 @@ Debug
   height: 400px;
 }
 
+.debug section:nth-child(even) {
+  background-color: #D3D3D3;
+}
+
+.debug section > * {
+  border: 2px dashed;
+  height: 480px;
+}
+
+.debug .big-box {
+  background-color: #1E90FF;
+}
+
+.debug .small-box {
+  background-color: #FFC0CB;
+}
+
 /*
 ===========
 Header top
@@ -100,4 +117,24 @@ Header bottom
 .header-box {
   width: 50%;
   margin: auto;
+}
+
+/*
+===========
+Main
+===========
+*/
+
+main section {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+section .big-box {
+  width: 38%;
+}
+
+section .small-box {
+  width: 25%;
 }
