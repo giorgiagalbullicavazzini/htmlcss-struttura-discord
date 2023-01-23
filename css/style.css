@@ -10,6 +10,16 @@ Reset
   padding: 0;
 }
 
+/* 
+===========
+Common
+===========
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /*
 ===========
 Debug
@@ -20,37 +30,74 @@ Debug
   background-color: #ADD8E6;
 }
 
-.debug .header-top * {
+.debug .header-top > * {
   background-color: #DAA520;
-  border: 1px dashed;
+  border: 2px dashed;
+}
+
+.debug .header-bottom {
+  background-color: #00008B;
+  border-bottom: 4px solid #ADD8E6;
+}
+
+.debug .header-box {
+  background-color: #EE82EE;
+  border: 2px dashed;
+  height: 400px;
 }
 
 /*
 ===========
-Header
+Header top
 ===========
 */
 
 .header-top {
   display: flex;
   justify-content: center;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.header-top > * {
   padding: 10px;
 }
 
-.header-top * {
-  padding: 5px;
-}
-
-.logo,
-.login {
+header .logo,
+header .login {
   width: 10%;
 }
 
-.login {
+header .login {
   text-align: right;
 }
 
-.link {
+header .link {
   width: 45%;
   text-align: center;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+header li {
+  padding: 0 5px;
+}
+
+/*
+===========
+Header bottom
+===========
+*/
+
+.header-bottom {
+  padding: 50px;
+}
+
+.header-box {
+  width: 50%;
+  margin: auto;
 }
