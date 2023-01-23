@@ -65,7 +65,7 @@ Header top
 
 header .logo,
 header .login {
-  width: 10%;
+  width: 13%;
 }
 
 header .login {
@@ -73,7 +73,7 @@ header .login {
 }
 
 header .link {
-  width: 45%;
+  width: 38%;
   text-align: center;
 }
 
